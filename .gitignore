@@ -1,0 +1,203 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.history/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Data Files - Keep structure, ignore contents
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# Model Files - Keep structure, ignore model binaries
+models/saved_models/*
+!models/saved_models/.gitkeep
+models/training/*
+!models/training/.gitkeep
+*.pkl
+*.joblib
+*.h5
+*.pb
+*.pth
+*.pt
+*.onnx
+*.tflite
+*.mlmodel
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+.nox/
+test-results/
+.benchmarks
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Profiling
+*.prof
+*.lprof
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Temporary Files
+*.tmp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+temp/
+tmp/
+.temp/
+.tmp/
+
+# Reports and Documentation Builds
+reports/
+*.pdf
+*.html
+docs/_build/
+site/
+_site/
+
+# Secrets and Keys
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+secrets/
+credentials/
+.secrets/
+.credentials/
+
+# Compressed Files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Cloud Provider Files
+.aws/
+.azure/
+.gcloud/
+
+# Package Manager
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build Artifacts
+*.whl
+*.egg-info/
+dist/
+build/
+
+# ML/AI Specific
+wandb/
+mlruns/
+*.ckpt
+checkpoint/
+checkpoints/
+
+# Project Specific
+GUIDE.md
+htmlcov/
