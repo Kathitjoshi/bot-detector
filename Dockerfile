@@ -35,6 +35,8 @@ COPY src/ ./src/
 RUN mkdir -p models/saved_models models/training
 COPY train.py .
 COPY run_api.py .
+RUN python train.py
+
 # Make sure scripts in .local are usable
 ENV PATH=/root/.local/bin:$PATH
 
