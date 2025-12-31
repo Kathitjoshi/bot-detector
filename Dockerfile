@@ -32,10 +32,9 @@ COPY --from=builder /root/.local /root/.local
 
 # Copy application code
 COPY src/ ./src/
-COPY models/ ./models/
+RUN mkdir -p models/saved_models models/training
 COPY train.py .
 COPY run_api.py .
-
 # Make sure scripts in .local are usable
 ENV PATH=/root/.local/bin:$PATH
 
