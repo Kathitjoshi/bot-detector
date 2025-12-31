@@ -508,77 +508,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-### Platform-Specific Deployment
 
-#### Render (Recommended for Beginners)
-
-1. Push code to GitHub
-2. Sign up at render.com
-3. Create New Web Service
-4. Connect GitHub repository
-5. Render auto-detects Dockerfile
-6. Set environment (Docker)
-7. Deploy
-
-Health Check Path: `/health`
-
-#### Railway
-
-1. Push code to GitHub
-2. Sign up at railway.app
-3. New Project → Deploy from GitHub
-4. Select repository
-5. Railway auto-detects Dockerfile
-6. Generate domain
-7. Deploy
-
-#### Heroku
-
-```bash
-# Login
-heroku login
-
-# Create app
-heroku create bot-detector-app
-
-# Deploy with Docker
-heroku container:login
-heroku container:push web -a bot-detector-app
-heroku container:release web -a bot-detector-app
-
-# Open app
-heroku open -a bot-detector-app
-```
-
-#### AWS EC2
-
-1. Launch Ubuntu EC2 instance
-2. SSH into instance
-3. Install Docker
-4. Clone repository
-5. Build and run Docker container
-6. Configure security groups (allow port 8000)
-
-#### Google Cloud Run
-
-```bash
-# Build and push
-gcloud builds submit --tag gcr.io/PROJECT_ID/bot-detector
-
-# Deploy
-gcloud run deploy bot-detector \
-  --image gcr.io/PROJECT_ID/bot-detector \
-  --platform managed \
-  --region us-central1 \
-  --allow-unauthenticated
-```
-
-### Environment Variables
-
-Configure these for production:
-- `PORT`: API server port (default: 8000)
-- `MODEL_PATH`: Path to model file (default: models/saved_models/best_model.joblib)
-- `LOG_LEVEL`: Logging level (INFO, DEBUG, WARNING, ERROR)
 
 ## CI/CD Pipeline
 
